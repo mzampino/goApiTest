@@ -24,6 +24,6 @@ func home(w http.ResponseWriter, r *http.Request) {
 }
 
 func ping(w http.ResponseWriter, r *http.Request) {
-	//	w.Header().Set("Content-type", "text/html")
+	w.Header().Set("Content-type", "text/html")
 	fmt.Fprint(w, "pong\n")
 }
